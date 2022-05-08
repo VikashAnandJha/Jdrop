@@ -1,0 +1,228 @@
+* {
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+  
+  body, html {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #314D5C; 
+font-family: 'Poppins', sans-serif;
+  }
+  
+  article {
+    width: 340px;
+    margin: 0 auto;
+  }
+  .output-panel{
+      display: block;
+      height: 200px;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+
+  }
+  
+  .select-file { 
+    width: auto;
+    height: auto;
+     
+    display: block;
+    cursor: pointer; 
+    
+    padding:  10px;
+    margin-top: 10px; 
+    /* width: 40%; */
+    height: auto;
+    display: block;
+    cursor: pointer;
+    /* float: left; */
+    /* margin-left: 30%; */
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .drag {
+    background-color: yellow!important;
+    border-color: red!important;
+    cursor: copy!important;
+  }
+  
+  
+  .connection-status {
+    background: yellow;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px dotted black;
+    border-top: 0;
+    cursor: pointer;
+  }
+  
+  .connection-status:hover {
+    background: #d9f3ff!important;
+    color: black!important;
+  }
+  
+  .connection-status.connecting {
+    background: #d0f4c1;
+    border-color: #d0f4c1;
+  }
+  
+  .connection-status.connected {
+    background: #8fff61;
+    border-color: #8fff61;
+  }
+  
+  .file-info {
+    border: 1px dotted black;
+    width: 300px;
+    height: 80px;
+    display: inline-block;
+    background-color: #2E4C5B;
+    color: white;
+  }
+  
+  .file-info .img-prevew {
+    max-width: 100%;
+  }
+  
+  .file-name {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  
+  .time-remaining,.size-remaining {
+      
+      text-align: center;
+      font-size: 10px;
+  }
+  
+  .progress-bar, .progress-bar-background {
+    position: relative;
+    width: 250px;
+    height: 5px;
+  }
+  
+  .progress-bar-background {
+    background: #90DDF1;
+    width: 0;
+  }
+  a{
+      text-decoration: none;
+      color: #8fff61;
+  }
+  
+  .percentage {
+    margin-top: 0%;
+    font-size: 10px;
+    color: #8fff61;
+  }
+  
+  .btn-pause, .btn-close {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    top: 200px;
+  }
+  
+  .btn-pause {
+      margin-left: 5px;
+      background-image: url(img/resume-icon.png);
+  }
+  
+  .btn-close {
+      margin-left: 283px;
+  }
+  
+  .btn-pause:hover, .btn-close:hover {
+    background-color: #d9f3ff;
+  }
+  
+  .btn-close {
+    background-image: url(img/close-icon.png);
+  }
+  
+  .btn-pause {
+    background-image: url(img/pause-icon.png);
+  }
+
+ 
+  
+   
+  
+  .wrapper{
+    
+  
+    display:inline-block;
+    align-items:center;
+    justify-content:center;
+    
+  }
+    .file-upload{
+  
+      height:200px;
+      width:200px;
+      border-radius: 100px;
+      position:relative;
+      
+      display:flex;
+      justify-content:center;
+      align-items: center;  
+  
+      border:4px solid #90DDF1;
+      overflow:hidden;
+        background-size: 100% 200%;
+      transition: all 1s;
+      color: #FFFFFF;
+      font-size:100px;
+    }
+      input[type='file']{
+  
+        height:200px;
+        width:200px;
+        position:relative;
+        top:0;
+        left:0;
+        opacity:0;
+        cursor:pointer;
+  
+      }
+  
+      &:hover{
+  
+        background-position: 0 -100%;
+  
+        color:#2590EB;
+  
+      }
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+    
+  
+  
+  
+  

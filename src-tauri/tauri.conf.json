@@ -1,0 +1,66 @@
+{
+  "package": {
+    "productName": "JDrop",
+    "version": "0.1.0"
+  },
+  "build": {
+    "distDir": "../public",
+    "devPath": "http://localhost:3000",
+    "beforeDevCommand": "",
+    "beforeBuildCommand": ""
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.jdrop.dev",
+      "icon": [
+        "icons/icon-32x32.png",
+        "icons/icon-128x128.png",
+        "icons/icon-128x128@2x.png"
+         
+      ],
+      "resources": [],
+      "externalBin": [],
+      "copyright": "",
+      "category": "DeveloperTool",
+      "shortDescription": "",
+      "longDescription": "",
+      "deb": {
+        "depends": []
+      },
+      "macOS": {
+        "frameworks": [],
+        "exceptionDomain": "",
+        "signingIdentity": null,
+        "providerShortName": null,
+        "entitlements": null
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "updater": {
+      "active": false
+    },
+    "allowlist": {
+      "all": true
+    },
+    "windows": [
+      {
+        "title": "JDrop",
+        "width": 400,
+        "height": 600,
+        "resizable": false,
+        "fullscreen": false,
+        "visible":true
+      }
+       
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
